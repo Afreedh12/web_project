@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="container">
+        <form id="form">
+            <div class="title">Get Started</div>
+                <!-- User name input -->
+                <div>
+                    <label for="username">Username</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" id="username" placeholder="Username">
+
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+
+                    <div class="error"></div>
+                </div>
+                <div>
+                    <!-- Email input -->
+                    <label for="email">Email</label>
+                    <i class="far fa-envelope"></i>
+
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+                
+                    <div class="error"></div>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <i class="fas fa-lock"></i>
+                    
+                    <input type="password" name="password" id="password" placeholder="Password Here">
+
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+
+                    <div class="error"></div>
+                </div>
+                <button id="btn" type="submit">Submit</button>
+                <div class="signup">
+                    <p>Are you a new user?</p>
+                    <a href="/html/signup.html"><input type="button" value="Sign Up"></a>
+                </div> 
+            </div>
+        </form>
+     </div>
+     <script src="/javascript/login.js"></script>
+</body>
+</html>
